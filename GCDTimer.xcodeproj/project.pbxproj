@@ -12,7 +12,7 @@
 		08AEF6EA21C65DA900649342 /* GCDCountingTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = 08AEF6C221C65D6400649342 /* GCDCountingTimer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		08AEF6EB21C65DAF00649342 /* GCDCountingTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 08AEF6C321C65D6400649342 /* GCDCountingTimer.m */; };
 		08AEF6EF21C65E2A00649342 /* GCDTimer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08AEF69F21C65C9F00649342 /* GCDTimer.framework */; };
-		08AEF6F221C6636F00649342 /* GCDTimer+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 08AEF6F121C6636F00649342 /* GCDTimer+Private.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		08AEF6F421C6645800649342 /* GCDTimer+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 08AEF6F321C6645800649342 /* GCDTimer+Private.h */; settings = {ATTRIBUTES = (Private, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +35,7 @@
 		08AEF6D321C65D7600649342 /* GCDCountingTimer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GCDCountingTimer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		08AEF6D521C65D7600649342 /* GCDCountingTimer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDCountingTimer.h; sourceTree = "<group>"; };
 		08AEF6D621C65D7600649342 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		08AEF6F121C6636F00649342 /* GCDTimer+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GCDTimer+Private.h"; sourceTree = "<group>"; };
+		08AEF6F321C6645800649342 /* GCDTimer+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GCDTimer+Private.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +98,7 @@
 		08AEF6C621C65D6400649342 /* GCDTimer */ = {
 			isa = PBXGroup;
 			children = (
-				08AEF6F021C6636F00649342 /* Private */,
+				08AEF6F321C6645800649342 /* GCDTimer+Private.h */,
 				08AEF6C421C65D6400649342 /* GCDTimer.h */,
 				08AEF6C521C65D6400649342 /* GCDTimer.m */,
 			);
@@ -121,14 +121,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		08AEF6F021C6636F00649342 /* Private */ = {
-			isa = PBXGroup;
-			children = (
-				08AEF6F121C6636F00649342 /* GCDTimer+Private.h */,
-			);
-			path = Private;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -137,7 +129,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				08AEF6CB21C65D6400649342 /* GCDTimer.h in Headers */,
-				08AEF6F221C6636F00649342 /* GCDTimer+Private.h in Headers */,
+				08AEF6F421C6645800649342 /* GCDTimer+Private.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
