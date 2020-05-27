@@ -33,8 +33,6 @@
 		08AEF6C421C65D6400649342 /* GCDTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDTimer.h; sourceTree = "<group>"; };
 		08AEF6C521C65D6400649342 /* GCDTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDTimer.m; sourceTree = "<group>"; };
 		08AEF6D321C65D7600649342 /* GCDCountingTimer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GCDCountingTimer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		08AEF6D521C65D7600649342 /* GCDCountingTimer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDCountingTimer.h; sourceTree = "<group>"; };
-		08AEF6D621C65D7600649342 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		08AEF6F321C6645800649342 /* GCDTimer+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GCDTimer+Private.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -61,7 +59,6 @@
 			isa = PBXGroup;
 			children = (
 				08AEF6A121C65C9F00649342 /* GCDTimer */,
-				08AEF6D421C65D7600649342 /* GCDCountingTimer */,
 				08AEF6A021C65C9F00649342 /* Products */,
 				08AEF6EE21C65E2A00649342 /* Frameworks */,
 			);
@@ -103,15 +100,6 @@
 				08AEF6C521C65D6400649342 /* GCDTimer.m */,
 			);
 			path = GCDTimer;
-			sourceTree = "<group>";
-		};
-		08AEF6D421C65D7600649342 /* GCDCountingTimer */ = {
-			isa = PBXGroup;
-			children = (
-				08AEF6D521C65D7600649342 /* GCDCountingTimer.h */,
-				08AEF6D621C65D7600649342 /* Info.plist */,
-			);
-			path = GCDCountingTimer;
 			sourceTree = "<group>";
 		};
 		08AEF6EE21C65E2A00649342 /* Frameworks */ = {
@@ -437,7 +425,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = GCDCountingTimer/Info.plist;
+				INFOPLIST_FILE = GCDTimer/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -461,7 +449,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = GCDCountingTimer/Info.plist;
+				INFOPLIST_FILE = GCDTimer/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

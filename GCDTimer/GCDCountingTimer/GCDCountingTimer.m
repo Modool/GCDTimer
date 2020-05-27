@@ -1,14 +1,19 @@
 //
 //  GCDCountingTimer.m
-//  BBLiveBase
+//  Modool
 //
 //  Created by xulinfeng on 2018/7/30.
-//  Copyright © 2018年 bilibili. All rights reserved.
+//  Copyright © 2018年 Modool. All rights reserved.
 //
 
-#import <GCDTimer/GCDTimer+Private.h>
-
 #import "GCDCountingTimer.h"
+
+@interface GCDTimer ()
+
+- (void)_invalidate;
+- (void)_performAction;
+
+@end
 
 @interface GCDCountingTimer () {
     GCDCountingRange _range;
@@ -136,14 +141,6 @@
         }
     }
     [_lock unlock];
-}
-
-#pragma mark - private
-
-- (void)_invalidate {
-    [super _invalidate];
-
-    if (_completion) _completion(self);
 }
 
 @end

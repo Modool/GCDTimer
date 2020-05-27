@@ -1,11 +1,10 @@
 //
 //  GCDCountingTimer.h
-//  BBLiveBase
+//  Modool
 //
-//  Created by xulinfeng on 2018/7/30.
-//  Copyright © 2018年 bilibili. All rights reserved.
+//  Created by xulinfeng on 2018/4/24.
+//  Copyright © 2018年 Modool. All rights reserved.
 //
-
 #import <GCDTimer/GCDTimer.h>
 
 NS_ASSUME_NONNULL_BEGIN
@@ -30,8 +29,6 @@ typedef struct {
 @property (copy) double (^offsetBlock)(GCDCountingTimer *timer);
 
 @property (copy, nullable, readonly) void (^block)(GCDCountingTimer *timer);
-
-@property (copy, nullable) void (^completion)(GCDCountingTimer *timer);
 
 + (instancetype)scheduledTimerWithInterval:(NSTimeInterval)interval target:(id)target action:(SEL)action userInfo:(nullable id)userInfo repeats:(BOOL)repeats NS_UNAVAILABLE;
 + (instancetype)scheduledTimerWithInterval:(NSTimeInterval)interval repeats:(BOOL)repeats block:(void (^)(GCDTimer *timer))block NS_UNAVAILABLE;

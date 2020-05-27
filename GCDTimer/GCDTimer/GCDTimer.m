@@ -1,9 +1,9 @@
 //
 //  GCDTimer.m
-//  Bilibili
+//  Modool
 //
 //  Created by xulinfeng on 2018/4/24.
-//  Copyright © 2018年 markejave. All rights reserved.
+//  Copyright © 2018年 Modool. All rights reserved.
 //
 
 #import "GCDTimer.h"
@@ -61,7 +61,7 @@
 }
 
 - (void)dealloc {
-    [self invalidate];
+    [self _invalidate];
 }
 
 #pragma mark - accessor
@@ -221,6 +221,7 @@
     [self _invalidate];
 
     _valid = YES;
+
     [self _schedule];
 }
 

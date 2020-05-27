@@ -1,16 +1,33 @@
 //
 //  GCDTimer.h
-//  Bilibili
+//  Modool
 //
 //  Created by xulinfeng on 2018/4/24.
-//  Copyright © 2018年 markejave. All rights reserved.
+//  Copyright © 2018年 Modool. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface GCDTimer : NSObject
+@interface GCDTimer : NSObject {
+@protected
+    NSRecursiveLock *_lock;
+
+    dispatch_source_t _timer;
+    dispatch_queue_t _targetQueue;
+
+    NSTimeInterval _leeway;
+    NSTimeInterval _interval;
+
+    BOOL _repeats;
+    BOOL _valid;
+    SEL _action;
+    __weak id _target;
+    __weak id _userInfo;
+
+    void (^_block)(GCDTimer *timer);
+}
 
 // Maximum leeway seconds, default is 0.f;
 @property (assign) NSTimeInterval leeway;
